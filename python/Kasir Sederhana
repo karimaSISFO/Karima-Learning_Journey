@@ -1,0 +1,33 @@
+print("==============================")
+print("      KASIR SEDERHANA")
+print("==============================")
+
+nama = input("Nama pembeli : ")
+barang = input("Nama barang  : ")
+harga = float(input("Harga barang : Rp "))
+jumlah = int(input("Jumlah       : "))
+
+total = harga * jumlah
+
+print("\n==============================")
+print("          STRUK BELANJA")
+print("==============================")
+
+print("Pembeli :", nama)
+print("Barang  :", barang)
+print("Harga   : Rp", harga)
+print("Jumlah  :", jumlah)
+print("Total   : Rp", total)
+
+if total >= 100000:
+    diskon = total * 0.10
+    print("Diskon  : 10%")
+else:
+    diskon = 0
+    print("Diskon  : 0%")
+
+bayar = total - diskon
+
+print("Bayar   : Rp", bayar)
+print("==============================")
+print("Terima kasih sudah berbelanja!")
