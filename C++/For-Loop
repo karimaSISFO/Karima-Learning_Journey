@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int angka;
+
+    cout << "============================" << endl;
+    cout << "      TABEL PERKALIAN" << endl;
+    cout << "============================" << endl;
+
+    cout << "Masukkan angka: ";
+    cin >> angka;
+
+    cout << "\nTabel Perkalian " << angka << endl;
+    cout << "----------------------------" << endl;
+
+    for (int i = 1; i <= 10; i++) {
+        cout << angka << " x " << i << " = " << angka * i << endl;
+    }
+
+    cout << "----------------------------" << endl;
+
+    return 0;
+}
