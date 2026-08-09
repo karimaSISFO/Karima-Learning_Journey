@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string nama;
+    float nilai;
+
+    cout << "============================" << endl;
+    cout << "   SISTEM CEK KELULUSAN" << endl;
+    cout << "============================" << endl;
+
+    cout << "Nama mahasiswa : ";
+    getline(cin, nama);
+
+    cout << "Nilai          : ";
+    cin >> nilai;
+
+    cout << "\n============================" << endl;
+    cout << "Hasil" << endl;
+    cout << "============================" << endl;
+
+    cout << "Nama  : " << nama << endl;
+    cout << "Nilai : " << nilai << endl;
+
+    if (nilai >= 85) {
+        cout << "Grade : A" << endl;
+        cout << "Keterangan : Sangat Baik" << endl;
+        cout << "Status : LULUS" << endl;
+    }
+    else if (nilai >= 75) {
+        cout << "Grade : B" << endl;
+        cout << "Keterangan : Baik" << endl;
+        cout << "Status : LULUS" << endl;
+    }
+    else if (nilai >= 65) {
+        cout << "Grade : C" << endl;
+        cout << "Keterangan : Cukup" << endl;
+        cout << "Status : LULUS" << endl;
+    }
+    else if (nilai >= 50) {
+        cout << "Grade : D" << endl;
+        cout << "Keterangan : Kurang" << endl;
+        cout << "Status : TIDAK LULUS" << endl;
+    }
+    else {
+        cout << "Grade : E" << endl;
+        cout << "Keterangan : Sangat Kurang" << endl;
+        cout << "Status : TIDAK LULUS" << endl;
+    }
+
+    return 0;
+}
