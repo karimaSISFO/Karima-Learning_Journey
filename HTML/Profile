@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata Saya</title>
+</head>
+
+<body>
+
+    <h1>Biodata Saya</h1>
+
+    <hr>
+
+    <h2>Data Diri</h2>
+
+    <p>Nama: Karima</p>
+    <p>NIM: 13120240038</p>
+    <p>Jurusan: Sistem Informasi</p>
+    <p>Semester: 5</p>
+
+    <h2>Tentang Saya</h2>
+
+    <p>
+        Saya sedang belajar pemrograman dan pengembangan website.
+        Saat ini saya sedang mempelajari HTML sebagai dasar
+        dalam pembuatan website.
+    </p>
+
+    <h2>Keahlian yang Sedang Dipelajari</h2>
+
+    <p>Java</p>
+    <p>Python</p>
+    <p>C++</p>
+    <p>Kotlin</p>
+    <p>HTML</p>
+
+    <hr>
+
+    <p>Terima kasih telah mengunjungi halaman saya.</p>
+
+</body>
+</html>
