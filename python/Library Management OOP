@@ -1,0 +1,59 @@
+class Buku:
+    def __init__(self, judul, penulis):
+        self.judul = judul
+        self.penulis = penulis
+        self.tersedia = True
+
+    def tampilkan_info(self):
+        status = "Tersedia" if self.tersedia else "Dipinjam"
+
+        print("Judul   :", self.judul)
+        print("Penulis :", self.penulis)
+        print("Status  :", status)
+
+    def pinjam(self):
+        if self.tersedia:
+            self.tersedia = False
+            print("Buku berhasil dipinjam.")
+        else:
+            print("Buku sedang dipinjam.")
+
+    def kembalikan(self):
+        if not self.tersedia:
+            self.tersedia = True
+            print("Buku berhasil dikembalikan.")
+        else:
+            print("Buku belum dipinjam.")
+
+
+# Membuat object
+buku1 = Buku("Laskar Pelangi", "Andrea Hirata")
+buku2 = Buku("Bumi", "Tere Liye")
+
+print("==============================")
+print("      SISTEM PERPUSTAKAAN")
+print("==============================")
+
+print("\nBuku 1")
+buku1.tampilkan_info()
+
+print("\nBuku 2")
+buku2.tampilkan_info()
+
+print("\n==============================")
+print("       PEMINJAMAN")
+print("==============================")
+
+buku1.pinjam()
+
+print("\nStatus buku setelah dipinjam:")
+buku1.tampilkan_info()
+
+print("\n==============================")
+print("       PENGEMBALIAN")
+print("==============================")
+
+buku1.kembalikan()
+
+print("\nStatus buku setelah dikembalikan:")
+buku1.tampilkan_info()
