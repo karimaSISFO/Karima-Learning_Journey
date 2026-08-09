@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pilihan;
+    double angka1, angka2, hasil;
+
+    cout << "============================" << endl;
+    cout << "    KALKULATOR C++" << endl;
+    cout << "============================" << endl;
+
+    cout << "Masukkan angka pertama : ";
+    cin >> angka1;
+
+    cout << "Masukkan angka kedua   : ";
+    cin >> angka2;
+
+    cout << "\nPilih operasi:" << endl;
+    cout << "1. Penjumlahan" << endl;
+    cout << "2. Pengurangan" << endl;
+    cout << "3. Perkalian" << endl;
+    cout << "4. Pembagian" << endl;
+    cout << "Pilih : ";
+    cin >> pilihan;
+
+    cout << "\n============================" << endl;
+
+    switch (pilihan) {
+        case 1:
+            hasil = angka1 + angka2;
+            cout << "Hasil Penjumlahan : " << hasil << endl;
+            break;
+
+        case 2:
+            hasil = angka1 - angka2;
+            cout << "Hasil Pengurangan : " << hasil << endl;
+            break;
+
+        case 3:
+            hasil = angka1 * angka2;
+            cout << "Hasil Perkalian   : " << hasil << endl;
+            break;
+
+        case 4:
+            if (angka2 != 0) {
+                hasil = angka1 / angka2;
+                cout << "Hasil Pembagian   : " << hasil << endl;
+            } else {
+                cout << "Tidak bisa membagi dengan 0!" << endl;
+            }
+            break;
+
+        default:
+            cout << "Pilihan tidak tersedia!" << endl;
+    }
+
+    cout << "============================" << endl;
+
+    return 0;
+}
