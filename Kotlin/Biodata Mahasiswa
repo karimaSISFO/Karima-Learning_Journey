@@ -1,0 +1,33 @@
+fun main() {
+
+    println("==============================")
+    println("       BIODATA MAHASISWA")
+    println("==============================")
+
+    print("Nama       : ")
+    val nama = readLine() ?: ""
+
+    print("NIM        : ")
+    val nim = readLine() ?: ""
+
+    print("Jurusan    : ")
+    val jurusan = readLine() ?: ""
+
+    print("Semester   : ")
+    var semester = readLine()?.toIntOrNull() ?: 1
+
+    print("IPK        : ")
+    val ipk = readLine()?.toDoubleOrNull() ?: 0.0
+
+    println("\n==============================")
+    println("        BIODATA ANDA")
+    println("==============================")
+
+    println("Nama       : $nama")
+    println("NIM        : $nim")
+    println("Jurusan    : $jurusan")
+    println("Semester   : $semester")
+    println("IPK        : $ipk")
+
+    println("==============================")
+}
