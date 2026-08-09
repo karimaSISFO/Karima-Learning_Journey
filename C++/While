@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int angkaRahasia = 7;
+    int tebakan;
+
+    cout << "============================" << endl;
+    cout << "       TEBAK ANGKA" << endl;
+    cout << "============================" << endl;
+
+    cout << "Saya sudah memilih angka 1-10." << endl;
+
+    cout << "\nMasukkan tebakan: ";
+    cin >> tebakan;
+
+    while (tebakan != angkaRahasia) {
+
+        if (tebakan < angkaRahasia) {
+            cout << "Terlalu kecil!" << endl;
+        }
+        else {
+            cout << "Terlalu besar!" << endl;
+        }
+
+        cout << "Coba lagi: ";
+        cin >> tebakan;
+    }
+
+    cout << "\nSelamat! Tebakan kamu benar." << endl;
+    cout << "Angka rahasianya adalah " << angkaRahasia << endl;
+
+    return 0;
+}
