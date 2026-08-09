@@ -1,0 +1,35 @@
+print("==============================")
+print("       STUDENT GRADES")
+print("==============================")
+
+nama = input("Nama mahasiswa: ")
+jumlah = int(input("Jumlah nilai: "))
+
+nilai = []
+
+for i in range(jumlah):
+    angka = float(input(f"Nilai ke-{i + 1}: "))
+    nilai.append(angka)
+
+total = sum(nilai)
+rata_rata = total / len(nilai)
+nilai_tertinggi = max(nilai)
+nilai_terendah = min(nilai)
+
+print("\n==============================")
+print("          HASIL NILAI")
+print("==============================")
+
+print("Nama            :", nama)
+print("Daftar nilai    :", nilai)
+print("Total nilai     :", total)
+print("Rata-rata       :", rata_rata)
+print("Nilai tertinggi :", nilai_tertinggi)
+print("Nilai terendah  :", nilai_terendah)
+
+if rata_rata >= 60:
+    print("Status          : LULUS")
+else:
+    print("Status          : TIDAK LULUS")
+
+print("==============================")
