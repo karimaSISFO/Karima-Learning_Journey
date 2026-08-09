@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+struct Mahasiswa {
+    string nama;
+    string nim;
+    string jurusan;
+    float nilai;
+};
+
+int main() {
+
+    int jumlah;
+
+    cout << "==================================" << endl;
+    cout << "      DATA MAHASISWA C++" << endl;
+    cout << "==================================" << endl;
+
+    cout << "Masukkan jumlah mahasiswa: ";
+    cin >> jumlah;
+
+    Mahasiswa mahasiswa[100];
+
+    for (int i = 0; i < jumlah; i++) {
+
+        cout << "\nMahasiswa ke-" << i + 1 << endl;
+
+        cin.ignore();
+
+        cout << "Nama    : ";
+        getline(cin, mahasiswa[i].nama);
+
+        cout << "NIM     : ";
+        getline(cin, mahasiswa[i].nim);
+
+        cout << "Jurusan : ";
+        getline(cin, mahasiswa[i].jurusan);
+
+        cout << "Nilai   : ";
+        cin >> mahasiswa[i].nilai;
+    }
+
+    cout << "\n==================================" << endl;
+    cout << "        DATA MAHASISWA" << endl;
+    cout << "==================================" << endl;
+
+    for (int i = 0; i < jumlah; i++) {
+
+        cout << "\nMahasiswa ke-" << i + 1 << endl;
+        cout << "Nama    : " << mahasiswa[i].nama << endl;
+        cout << "NIM     : " << mahasiswa[i].nim << endl;
+        cout << "Jurusan : " << mahasiswa[i].jurusan << endl;
+        cout << "Nilai   : " << mahasiswa[i].nilai << endl;
+
+        if (mahasiswa[i].nilai >= 60) {
+            cout << "Status  : LULUS" << endl;
+        } else {
+            cout << "Status  : TIDAK LULUS" << endl;
+        }
+    }
+
+    return 0;
+}
