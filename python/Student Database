@@ -1,0 +1,40 @@
+print("==============================")
+print("       STUDENT DATABASE")
+print("==============================")
+
+mahasiswa = {}
+
+jumlah = int(input("Jumlah mahasiswa: "))
+
+for i in range(jumlah):
+
+    print(f"\nMahasiswa ke-{i + 1}")
+
+    nim = input("NIM     : ")
+    nama = input("Nama    : ")
+    jurusan = input("Jurusan : ")
+    nilai = float(input("Nilai   : "))
+
+    mahasiswa[nim] = {
+        "nama": nama,
+        "jurusan": jurusan,
+        "nilai": nilai
+    }
+
+print("\n==============================")
+print("       DATA MAHASISWA")
+print("==============================")
+
+for nim, data in mahasiswa.items():
+
+    print("\nNIM     :", nim)
+    print("Nama    :", data["nama"])
+    print("Jurusan :", data["jurusan"])
+    print("Nilai   :", data["nilai"])
+
+    if data["nilai"] >= 60:
+        print("Status  : LULUS")
+    else:
+        print("Status  : TIDAK LULUS")
+
+print("==============================")
