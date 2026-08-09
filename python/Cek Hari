@@ -1,0 +1,45 @@
+print("==============================")
+print("       CEK HARI")
+print("==============================")
+
+print("1. Senin")
+print("2. Selasa")
+print("3. Rabu")
+print("4. Kamis")
+print("5. Jumat")
+print("6. Sabtu")
+print("7. Minggu")
+
+print("==============================")
+
+pilihan = input("Pilih nomor hari: ")
+
+match pilihan:
+    case "1":
+        hari = "Senin"
+
+    case "2":
+        hari = "Selasa"
+
+    case "3":
+        hari = "Rabu"
+
+    case "4":
+        hari = "Kamis"
+
+    case "5":
+        hari = "Jumat"
+
+    case "6":
+        hari = "Sabtu"
+
+    case "7":
+        hari = "Minggu"
+
+    case _:
+        hari = None
+
+if hari:
+    print("\nHari yang dipilih:", hari)
+else:
+    print("\nNomor hari tidak valid!")
