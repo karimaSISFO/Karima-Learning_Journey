@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pilihan;
+    double saldo = 1000000;
+    double jumlah;
+
+    do {
+        cout << "\n==========================" << endl;
+        cout << "       ATM SEDERHANA" << endl;
+        cout << "==========================" << endl;
+        cout << "1. Cek Saldo" << endl;
+        cout << "2. Tarik Tunai" << endl;
+        cout << "3. Setor Tunai" << endl;
+        cout << "4. Keluar" << endl;
+        cout << "--------------------------" << endl;
+        cout << "Pilih menu : ";
+        cin >> pilihan;
+
+        if (pilihan == 1) {
+            cout << "\nSaldo Anda : Rp " << saldo << endl;
+        }
+        else if (pilihan == 2) {
+            cout << "\nMasukkan jumlah penarikan : Rp ";
+            cin >> jumlah;
+
+            if (jumlah > saldo) {
+                cout << "Saldo tidak mencukupi!" << endl;
+            }
+            else if (jumlah <= 0) {
+                cout << "Jumlah tidak valid!" << endl;
+            }
+            else {
+                saldo -= jumlah;
+                cout << "Penarikan berhasil." << endl;
+                cout << "Saldo sekarang : Rp " << saldo << endl;
+            }
+        }
+        else if (pilihan == 3) {
+            cout << "\nMasukkan jumlah setoran : Rp ";
+            cin >> jumlah;
+
+            if (jumlah <= 0) {
+                cout << "Jumlah tidak valid!" << endl;
+            }
+            else {
+                saldo += jumlah;
+                cout << "Setoran berhasil." << endl;
+                cout << "Saldo sekarang : Rp " << saldo << endl;
+            }
+        }
+        else if (pilihan == 4) {
+            cout << "\nTerima kasih telah menggunakan ATM." << endl;
+        }
+        else {
+            cout << "\nMenu tidak tersedia!" << endl;
+        }
+
+    } while (pilihan != 4);
+
+    return 0;
+}
