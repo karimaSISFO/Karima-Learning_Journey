@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double angka1, angka2, hasil;
+    char operasi;
+    char ulang;
+
+    do {
+        cout << "==========================" << endl;
+        cout << "      KALKULATOR C++" << endl;
+        cout << "==========================" << endl;
+
+        cout << "Masukkan angka pertama : ";
+        cin >> angka1;
+
+        cout << "Masukkan operator (+ - * /): ";
+        cin >> operasi;
+
+        cout << "Masukkan angka kedua   : ";
+        cin >> angka2;
+
+        switch (operasi) {
+            case '+':
+                hasil = angka1 + angka2;
+                cout << "Hasil = " << hasil << endl;
+                break;
+
+            case '-':
+                hasil = angka1 - angka2;
+                cout << "Hasil = " << hasil << endl;
+                break;
+
+            case '*':
+                hasil = angka1 * angka2;
+                cout << "Hasil = " << hasil << endl;
+                break;
+
+            case '/':
+                if (angka2 != 0) {
+                    hasil = angka1 / angka2;
+                    cout << "Hasil = " << hasil << endl;
+                } else {
+                    cout << "Error: Tidak bisa dibagi dengan 0!" << endl;
+                }
+                break;
+
+            default:
+                cout << "Operator tidak valid!" << endl;
+        }
+
+        cout << "\nHitung lagi? (y/n): ";
+        cin >> ulang;
+
+        cout << endl;
+
+    } while (ulang == 'y' || ulang == 'Y');
+
+    cout << "Program selesai." << endl;
+
+    return 0;
+}
