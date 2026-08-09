@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+class Mahasiswa {
+private:
+    string nama;
+    string nim;
+    float nilai;
+
+public:
+
+    // Constructor
+    Mahasiswa(string nama, string nim, float nilai) {
+        this->nama = nama;
+        this->nim = nim;
+        this->nilai = nilai;
+    }
+
+    // Method untuk menampilkan data
+    void tampilkanData() {
+        cout << "============================" << endl;
+        cout << "      DATA MAHASISWA" << endl;
+        cout << "============================" << endl;
+
+        cout << "Nama  : " << nama << endl;
+        cout << "NIM   : " << nim << endl;
+        cout << "Nilai : " << nilai << endl;
+
+        if (nilai >= 60) {
+            cout << "Status: LULUS" << endl;
+        } else {
+            cout << "Status: TIDAK LULUS" << endl;
+        }
+    }
+};
+
+int main() {
+
+    Mahasiswa mahasiswa1(
+        "Karima",
+        "123456",
+        85
+    );
+
+    mahasiswa1.tampilkanData();
+
+    return 0;
+}
