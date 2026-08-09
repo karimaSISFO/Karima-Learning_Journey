@@ -1,0 +1,31 @@
+import random
+
+print("==============================")
+print("     NUMBER GUESSING GAME")
+print("==============================")
+
+angka_rahasia = random.randint(1, 100)
+percobaan = 0
+
+print("Saya sudah memilih angka 1-100.")
+print("Coba tebak angkanya!")
+
+while True:
+    tebakan = int(input("\nMasukkan tebakan: "))
+    percobaan += 1
+
+    if tebakan < angka_rahasia:
+        print("Terlalu kecil!")
+
+    elif tebakan > angka_rahasia:
+        print("Terlalu besar!")
+
+    else:
+        print("\n🎉 Tebakan benar!")
+        print("Angka rahasia:", angka_rahasia)
+        print("Jumlah percobaan:", percobaan)
+        break
+
+print("==============================")
+print("       GAME SELESAI")
+print("==============================")
