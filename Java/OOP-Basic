@@ -1,0 +1,284 @@
+1. Apa itu OOP?
+
+OOP (Object-Oriented Programming) adalah paradigma pemrograman yang membuat program berdasarkan objek.
+
+Objek dapat memiliki:
+
+Attribute → data atau karakteristik objek
+Method → tindakan atau fungsi yang dapat dilakukan objek
+
+Contoh sederhana:
+class Mahasiswa {
+    String nama;
+    int umur;
+
+    void belajar() {
+        System.out.println(nama + " sedang belajar");
+    }
+}
+
+Pada contoh tersebut:
+
+Mahasiswa → class
+nama dan umur → attribute
+belajar() → method
+
+2. Class
+
+Class adalah blueprint atau cetakan untuk membuat objek.
+class Mobil {
+    String merk;
+    int tahun;
+}
+Class tersebut belum menjadi objek. Kita perlu membuat objek:
+        Mobil mobil1 = new Mobil();
+
+        mobil1.merk = "Toyota";
+        mobil1.tahun = 2024;
+
+Jadi:
+Class = cetakan
+Object = hasil dari cetakan
+
+3. Object
+Object adalah instance dari sebuah class.
+       Mahasiswa mahasiswa1 = new Mahasiswa();
+mahasiswa1 adalah object dari class Mahasiswa.
+
+Kita dapat memberikan data:
+      mahasiswa1.nama = "Karima";
+      mahasiswa1.umur = 20;
+
+Kemudian menjalankan method:
+    mahasiswa1.belajar();
+4. Encapsulation
+Encapsulation adalah konsep membungkus data dan method dalam sebuah class serta membatasi akses langsung terhadap data tersebut.
+Biasanya menggunakan:
+private
+
+Contoh:
+class Mahasiswa {
+    private String nama;
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+}
+
+Penggunaan:
+    Mahasiswa mhs = new Mahasiswa();
+    mhs.setNama("Karima");
+    System.out.println(mhs.getNama());
+
+Kenapa menggunakan encapsulation?
+
+Karena kita dapat mengontrol bagaimana data diakses atau diubah.
+
+Sederhananya:
+
+Encapsulation = melindungi data.
+
+5. Inheritance
+Inheritance adalah konsep ketika sebuah class mewarisi atribut dan method dari class lain.
+Contoh:
+class Hewan {
+    void makan() {
+        System.out.println("Hewan sedang makan");
+    }
+}
+Kemudian:
+class Kucing extends Hewan {
+    void mengeong() {
+        System.out.println("Meong");
+    }
+}
+
+Sekarang Kucing memiliki method:
+makan()
+dan:
+mengeong()
+Contoh:
+Kucing kucing = new Kucing();
+
+kucing.makan();
+kucing.mengeong();
+Sederhananya:
+
+Inheritance = pewarisan sifat dari parent ke child.
+
+6. Polymorphism
+Polymorphism berarti satu bentuk dapat memiliki banyak bentuk perilaku.
+Contoh:
+
+class Hewan {
+    void suara() {
+        System.out.println("Suara hewan");
+    }
+}
+
+Kemudian:
+class Kucing extends Hewan {
+    @Override
+    void suara() {
+        System.out.println("Meong");
+    }
+}
+
+Dan:
+class Anjing extends Hewan {
+    @Override
+    void suara() {
+        System.out.println("Guk guk");
+    }
+}
+
+Kita dapat lakukan:
+Hewan hewan1 = new Kucing();
+Hewan hewan2 = new Anjing();
+
+hewan1.suara();
+hewan2.suara();
+
+Hasil:
+Meong
+Guk guk
+
+Walaupun sama-sama bertipe Hewan, perilakunya berbeda.
+Sederhananya:
+Polymorphism = satu method, perilaku bisa berbeda.
+7. Abstraction
+
+Abstraction adalah konsep menyembunyikan detail implementasi dan hanya menampilkan bagian penting.
+
+Contoh menggunakan abstract class:
+
+abstract class Kendaraan {
+
+    abstract void bergerak();
+
+    void berhenti() {
+        System.out.println("Kendaraan berhenti");
+    }
+}
+
+Kemudian:
+
+class Mobil extends Kendaraan {
+
+    @Override
+    void bergerak() {
+        System.out.println("Mobil berjalan");
+    }
+}
+
+Kita tidak perlu mengetahui secara detail bagaimana sistem mesin bekerja. Kita cukup menggunakan:
+
+mobil.bergerak();
+Sederhananya:
+
+Abstraction = menyembunyikan detail yang tidak perlu diketahui.
+
+8. Constructor
+
+Constructor adalah method khusus yang otomatis dijalankan ketika object dibuat.
+
+Contoh:
+
+class Mahasiswa {
+    String nama;
+
+    Mahasiswa(String nama) {
+        this.nama = nama;
+    }
+}
+
+Saat object dibuat:
+
+Mahasiswa mhs = new Mahasiswa("Karima");
+
+Constructor langsung dijalankan.
+
+Ciri constructor:
+Namanya sama dengan nama class.
+Tidak memiliki return type.
+Dipanggil otomatis ketika object dibuat.
+9. Method
+
+Method adalah blok kode yang digunakan untuk melakukan suatu tindakan.
+
+Contoh:
+
+void belajar() {
+    System.out.println("Sedang belajar");
+}
+
+Method dapat menerima parameter:
+
+void sapa(String nama) {
+    System.out.println("Halo " + nama);
+}
+
+Pemanggilan:
+
+sapa("Karima");
+10. Empat Pilar OOP
+
+Ini yang paling penting untuk diingat:
+
+Pilar	Pengertian sederhana
+ Encapsulation	Melindungi/membungkus data
+ Inheritance	Mewariskan sifat
+ Polymorphism	Satu bentuk, banyak perilaku
+ Abstraction	Menyembunyikan detail
+
+Cara cepat mengingat:
+
+Encapsulation = bungkus
+Inheritance = wariskan
+Polymorphism = banyak bentuk
+Abstraction = sembunyikan detail
+
+Contoh OOP sederhana
+
+Semua konsep tersebut dapat digabungkan:
+
+abstract class Hewan {
+
+    private String nama;
+
+    Hewan(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    abstract void suara();
+}
+
+class Kucing extends Hewan {
+
+    Kucing(String nama) {
+        super(nama);
+    }
+
+    @Override
+    void suara() {
+        System.out.println(getNama() + " berkata: Meong");
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Hewan kucing = new Kucing("Milo");
+
+        kucing.suara();
+    }
+}
