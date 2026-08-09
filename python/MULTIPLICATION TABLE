@@ -1,0 +1,15 @@
+print("==============================")
+print("     MULTIPLICATION TABLE")
+print("==============================")
+
+angka = int(input("Masukkan angka: "))
+
+print("\nTabel Perkalian", angka)
+print("------------------------------")
+
+for i in range(1, 11):
+    hasil = angka * i
+    print(angka, "x", i, "=", hasil)
+
+print("------------------------------")
+print("Tabel selesai.")
