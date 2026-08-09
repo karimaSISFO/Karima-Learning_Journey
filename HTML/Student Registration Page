@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Registration</h1>
+
+        <p>
+            Halaman pendaftaran mahasiswa baru.
+        </p>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#information">Information</a> |
+            <a href="#registration">Registration</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Selamat datang di halaman pendaftaran mahasiswa.
+                Silakan lengkapi data diri Anda dengan benar.
+            </p>
+
+            <img
+                src="https://via.placeholder.com/600x250"
+                alt="Student Registration"
+            >
+
+        </section>
+
+        <hr>
+
+        <section id="information">
+
+            <h2>Informasi Pendaftaran</h2>
+
+            <p>
+                Berikut adalah beberapa persyaratan yang harus
+                dipersiapkan sebelum melakukan pendaftaran.
+            </p>
+
+            <h3>Persyaratan</h3>
+
+            <ul>
+                <li>Fotokopi Kartu Keluarga</li>
+                <li>Fotokopi Ijazah</li>
+                <li>Fotokopi KTP</li>
+                <li>Pas Foto</li>
+                <li>Mengisi formulir pendaftaran</li>
+            </ul>
+
+            <h3>Proses Pendaftaran</h3>
+
+            <ol>
+                <li>Mengisi formulir</li>
+                <li>Mengirim data</li>
+                <li>Melakukan verifikasi</li>
+                <li>Menunggu hasil pendaftaran</li>
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h2>Jadwal Pendaftaran</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Kegiatan</th>
+                        <th>Tanggal</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Pendaftaran</td>
+                        <td>1 - 15 Agustus</td>
+                        <td>Terbuka</td>
+                    </tr>
+
+                    <tr>
+                        <td>Verifikasi</td>
+                        <td>16 - 20 Agustus</td>
+                        <td>Terjadwal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pengumuman</td>
+                        <td>25 Agustus</td>
+                        <td>Terjadwal</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <section id="registration">
+
+            <h2>Formulir Pendaftaran</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Data Pribadi</legend>
+
+                    <p>
+                        <label for="nama">Nama Lengkap:</label>
+                        <br>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="nim">NIM:</label>
+                        <br>
+                        <input
+                            type="text"
+                            id="nim"
+                            name="nim"
+                            placeholder="Masukkan NIM"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="tanggal">Tanggal Lahir:</label>
+                        <br>
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal"
+                        >
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Informasi Akademik</legend>
+
+                    <p>
+                        <label for="jurusan">Jurusan:</label>
+                        <br>
+
+                        <select id="jurusan" name="jurusan">
+
+                            <option value="">
+                                -- Pilih Jurusan --
+                            </option>
+
+                            <option value="sistem-informasi">
+                                Sistem Informasi
+                            </option>
+
+                            <option value="informatika">
+                                Teknik Informatika
+                            </option>
+
+                            <option value="teknik-komputer">
+                                Teknik Komputer
+                            </option>
+
+                        </select>
+
+                    </p>
+
+                    <p>
+                        Jenis Kelamin:
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="laki"
+                            name="gender"
+                            value="laki-laki"
+                        >
+
+                        <label for="laki">
+                            Laki-laki
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="radio"
+                            id="perempuan"
+                            name="gender"
+                            value="perempuan"
+                        >
+
+                        <label for="perempuan">
+                            Perempuan
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Minat</legend>
+
+                    <p>
+                        Pilih bidang yang diminati:
+                    </p>
+
+                    <input
+                        type="checkbox"
+                        id="web"
+                        name="minat"
+                        value="web"
+                    >
+
+                    <label for="web">
+                        Web Development
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="mobile"
+                        name="minat"
+                        value="mobile"
+                    >
+
+                    <label for="mobile">
+                        Mobile Development
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="data"
+                        name="minat"
+                        value="data"
+                    >
+
+                    <label for="data">
+                        Data Science
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="uiux"
+                        name="minat"
+                        value="uiux"
+                    >
+
+                    <label for="uiux">
+                        UI/UX Design
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Alasan Mendaftar</legend>
+
+                    <label for="alasan">
+                        Ceritakan alasan Anda:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="alasan"
+                        name="alasan"
+                        rows="6"
+                        cols="50"
+                        placeholder="Tuliskan alasan Anda..."
+                    ></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="persetujuan"
+                    name="persetujuan"
+                    required
+                >
+
+                <label for="persetujuan">
+                    Saya menyatakan bahwa data yang diberikan benar.
+                </label>
+
+                <br><br>
+
+                <button type="submit">
+                    Daftar Sekarang
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: student@example.com</p>
+
+        <p>
+            Website:
+            <a href="https://example.com">
+                example.com
+            </a>
+        </p>
+
+        <p>
+            &copy; 2026 Student Registration
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
