@@ -1,0 +1,76 @@
+contacts = {}
+
+
+def tambah_kontak():
+    nama = input("Nama  : ")
+    nomor = input("Nomor : ")
+
+    contacts[nama] = nomor
+
+    print("Kontak berhasil ditambahkan!")
+
+
+def lihat_kontak():
+    if not contacts:
+        print("Belum ada kontak.")
+        return
+
+    print("\n===== DAFTAR KONTAK =====")
+
+    for nama, nomor in contacts.items():
+        print("Nama  :", nama)
+        print("Nomor :", nomor)
+        print("------------------------")
+
+
+def cari_kontak():
+    nama = input("Masukkan nama yang dicari: ")
+
+    if nama in contacts:
+        print("Nama  :", nama)
+        print("Nomor :", contacts[nama])
+    else:
+        print("Kontak tidak ditemukan.")
+
+
+def hapus_kontak():
+    nama = input("Masukkan nama yang ingin dihapus: ")
+
+    if nama in contacts:
+        del contacts[nama]
+        print("Kontak berhasil dihapus!")
+    else:
+        print("Kontak tidak ditemukan.")
+
+
+while True:
+    print("\n==============================")
+    print("         CONTACT BOOK")
+    print("==============================")
+    print("1. Tambah Kontak")
+    print("2. Lihat Kontak")
+    print("3. Cari Kontak")
+    print("4. Hapus Kontak")
+    print("5. Keluar")
+    print("==============================")
+
+    pilihan = input("Pilih menu: ")
+
+    if pilihan == "1":
+        tambah_kontak()
+
+    elif pilihan == "2":
+        lihat_kontak()
+
+    elif pilihan == "3":
+        cari_kontak()
+
+    elif pilihan == "4":
+        hapus_kontak()
+
+    elif pilihan == "5":
+        print("Program selesai.")
+        break
+
+    else:
+        print("Pilihan tidak tersedia.")
