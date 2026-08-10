@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tambah {
+    background: #198754;
+    color: white;
+}
+
+.edit {
+    background: #ffc107;
+    color: #000;
+}
+
+.hapus {
+    background: #dc3545;
+    color: white;
+}
+
+.simpan {
+    background: #198754;
+    color: white;
+}
+
+.kembali {
+    background: #6c757d;
+    color: white;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form .btn {
+    margin-top: 20px;
+}
+
+.kosong {
+    text-align: center !important;
+    padding: 25px !important;
+}
