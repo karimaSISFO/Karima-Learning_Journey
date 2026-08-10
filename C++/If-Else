@@ -5,9 +5,7 @@ int main() {
     string nama;
     float nilai;
 
-    cout << "============================" << endl;
     cout << "   SISTEM CEK KELULUSAN" << endl;
-    cout << "============================" << endl;
 
     cout << "Nama mahasiswa : ";
     getline(cin, nama);
