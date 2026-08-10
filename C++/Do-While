@@ -8,7 +8,6 @@ int main() {
 
     do {
         cout << "       ATM SEDERHANA" << endl;
-        cout << "==========================" << endl;
         cout << "1. Cek Saldo" << endl;
         cout << "2. Tarik Tunai" << endl;
         cout << "3. Setor Tunai" << endl;
