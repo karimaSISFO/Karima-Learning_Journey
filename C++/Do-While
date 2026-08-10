@@ -7,7 +7,6 @@ int main() {
     double jumlah;
 
     do {
-        cout << "\n==========================" << endl;
         cout << "       ATM SEDERHANA" << endl;
         cout << "==========================" << endl;
         cout << "1. Cek Saldo" << endl;
