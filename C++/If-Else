@@ -15,7 +15,6 @@ int main() {
 
     cout << "\n============================" << endl;
     cout << "Hasil" << endl;
-    cout << "============================" << endl;
 
     cout << "Nama  : " << nama << endl;
     cout << "Nilai : " << nilai << endl;
