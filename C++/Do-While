@@ -12,7 +12,7 @@ int main() {
         cout << "2. Tarik Tunai" << endl;
         cout << "3. Setor Tunai" << endl;
         cout << "4. Keluar" << endl;
-        cout << "--------------------------" << endl;
+        cout << endl;
         cout << "Pilih menu : ";
         cin >> pilihan;
 
