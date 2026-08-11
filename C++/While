@@ -6,7 +6,7 @@ int main() {
     int angkaRahasia = 7;
     int tebakan;
 
-    cout << "============================" << endl;
+   
     cout << "       TEBAK ANGKA" << endl;
 
     cout << "Saya sudah memilih angka 1-10." << endl;
