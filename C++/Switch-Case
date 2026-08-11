@@ -5,7 +5,6 @@ int main() {
     int pilihan;
     double angka1, angka2, hasil;
 
-    cout << "============================" << endl;
     cout << "    KALKULATOR C++" << endl;
     cout << "============================" << endl;
 
