@@ -21,7 +21,6 @@ int main() {
     cout << "Pilih : ";
     cin >> pilihan;
 
-    cout << "\n============================" << endl;
 
     switch (pilihan) {
         case 1:
