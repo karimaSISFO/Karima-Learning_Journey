@@ -20,7 +20,6 @@ public:
     void tampilkanData() {
         cout << "============================" << endl;
         cout << "      DATA MAHASISWA" << endl;
-        cout << "============================" << endl;
 
         cout << "Nama  : " << nama << endl;
         cout << "NIM   : " << nim << endl;
