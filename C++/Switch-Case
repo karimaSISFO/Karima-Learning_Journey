@@ -6,7 +6,6 @@ int main() {
     double angka1, angka2, hasil;
 
     cout << "    KALKULATOR C++" << endl;
-    cout << "============================" << endl;
 
     cout << "Masukkan angka pertama : ";
     cin >> angka1;
