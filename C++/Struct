@@ -14,7 +14,6 @@ int main() {
 
     cout << "==================================" << endl;
     cout << "      DATA MAHASISWA C++" << endl;
-    cout << "==================================" << endl;
 
     cout << "Masukkan jumlah mahasiswa: ";
     cin >> jumlah;
