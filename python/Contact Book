@@ -1,6 +1,5 @@
 contacts = {}
 
-
 def tambah_kontak():
     nama = input("Nama  : ")
     nomor = input("Nomor : ")
@@ -8,7 +7,6 @@ def tambah_kontak():
     contacts[nama] = nomor
 
     print("Kontak berhasil ditambahkan!")
-
 
 def lihat_kontak():
     if not contacts:
