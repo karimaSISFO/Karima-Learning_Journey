@@ -42,7 +42,6 @@ def hapus_kontak():
 
 
 while True:
-    print("\n==============================")
     print("         CONTACT BOOK")
     print("==============================")
     print("1. Tambah Kontak")
